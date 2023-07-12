@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-
 import 'hadeth_model.dart';
 import 'hadeth_widget.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
