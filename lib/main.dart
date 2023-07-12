@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
       theme:MyTheme.lightTheme,
       darkTheme: MyTheme.darkTheme,
       themeMode: settingProvider.currentTheme,
-      localizationsDelegates: [
+      localizationsDelegates: const [
         AppLocalizations.delegate,
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,

@@ -3,7 +3,6 @@ import 'package:islami/home/hadeth/hadeth_tab.dart';
 import 'package:islami/home/quran/quran_tab.dart';
 import 'package:provider/provider.dart';
 import '../providers/settings_provider.dart';
-import 'radio/radio_tab.dart';
 import 'sebha/sebha_tab.dart';
 import 'settings/settings_tab.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -34,11 +33,7 @@ int selectedIndex=0;
         title:  Text(AppLocalizations.of(context)!.app_title),
       ),
         bottomNavigationBar: BottomNavigationBar(items: [
-           BottomNavigationBarItem(
-              backgroundColor: Theme.of(context).primaryColor,
-               icon:const ImageIcon(
-            AssetImage('assets/images/ic_radio.png')
-          ), label: AppLocalizations.of(context)!.radio),
+
          BottomNavigationBarItem(icon:const ImageIcon(AssetImage('assets/images/ic_sebha.png'),),
          label: AppLocalizations.of(context)!.mention,
            backgroundColor: Theme.of(context).primaryColor,
@@ -68,5 +63,6 @@ int selectedIndex=0;
       ),
     );
   }
-  List<Widget> tabs=[RadioTab(),SebhaTab(),HadethTab(),QuranTab(),SettingsTab()];
+  List<Widget> tabs=[
+    SebhaTab(),HadethTab(),QuranTab(),SettingsTab()];
 }
